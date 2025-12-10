@@ -87,7 +87,7 @@ class KerasIO:
                     name = fname[:-3]
                     example_path = name.split("/")[-1]
                     if example_path not in preexisting:
-                        f = open(path / fname, encoding="utf-8")
+                        f = open(path / fname)
                         f.readline()
                         title_line = f.readline()
                         f.close()
@@ -907,7 +907,7 @@ class KerasIO:
             if not relative_url.endswith("/"):
                 relative_url += "/"
 
-        md_file = open(src_dir / fname, encoding="utf-8")
+        md_file = open(src_dir / fname)
         md_content = md_file.read()
         md_file.close()
         md_content = replace_links(md_content)

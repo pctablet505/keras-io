@@ -84,6 +84,10 @@ GUIDES_MASTER = {
             "title": "Serialization & saving",
         },
         {
+            "path": "litert_export",
+            "title": "Exporting models to LiteRT (TensorFlow Lite)",
+        },
+        {
             "path": "customizing_saving_and_serialization",
             "title": "Customizing saving & serialization",
         },
